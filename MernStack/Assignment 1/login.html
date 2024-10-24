@@ -1,0 +1,85 @@
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            font-family: Arial, sans-serif;
+        }
+        .login-container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            border: none;
+            border-radius: 5px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .login-container .forgot-password {
+            display: block;
+            margin: 10px 0;
+            color: #764ba2;
+            text-decoration: none;
+        }
+        .login-container .social-login {
+            margin: 20px 0;
+        }
+        .login-container .social-login i {
+            margin: 0 10px;
+            font-size: 20px;
+            color: #764ba2;
+            cursor: pointer;
+        }
+        .login-container .signup-link {
+            display: block;
+            margin-top: 20px;
+            color: #764ba2;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <a href="#" class="forgot-password">Forgot password?</a>
+        <button>Login</button>
+        <div class="social-login">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-google"></i>
+        </div>
+        <a href="#" class="signup-link">Create an account</a>
+    </div>
+</body>
+</html>

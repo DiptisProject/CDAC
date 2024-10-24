@@ -1,0 +1,113 @@
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #a0d6d1;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+            position: relative;
+        }
+        .input-group input, .input-group select {
+            width: calc(100% - 40px);
+            padding: 10px;
+            padding-left: 40px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .input-group i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #555;
+        }
+        .input-group input[type="radio"] {
+            width: auto;
+            padding-left: 0;
+        }
+        .input-group label {
+            margin-left: 5px;
+            font-size: 14px;
+        }
+        .input-group .terms {
+            display: flex;
+            align-items: center;
+        }
+        .input-group .terms input {
+            width: auto;
+            margin-right: 5px;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #008080;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #006666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Full Name">
+        </div>
+        <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="Email">
+        </div>
+        <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password">
+        </div>
+        <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Re-type Password">
+        </div>
+        <div class="input-group">
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label>
+        </div>
+        <div class="input-group">
+            <select>
+                <option>Select a state</option>
+                <option>State 1</option>
+                <option>State 2</option>
+                <option>State 3</option>
+            </select>
+        </div>
+        
+        <button class="btn">Register</button>
+    </div>
+</body>
+</html>
