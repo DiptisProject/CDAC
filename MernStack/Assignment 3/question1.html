@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            height: 500px;
+            background-color: burlywood;
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto; /* Centers the container */
+            padding: 20px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1 style="color: brown;">ABOUT CDAC</h1>
+   <p id="paragraphstyle">CDAC is a leading provider of online courses, offering a wide range of programs designed to enhance professional skills and knowledge. With years of
+     experience in the industry, CDAC has established a reputation for delivering high-quality, online training.Their courses cater to diverse learners 
+     and are delivered through various formats to suit different learning styles. Students benefit from hands-on exercises and real-world case studies, 
+     ensuring a comprehensive learning experience. CDAC`s team of experienced instructors brings industry expertise to the classroom, preparing students 
+     for success in their chosen fields. With a high satisfaction rate among past participants, CDAC remains a trusted choice for individuals seeking to 
+     advance their careers through targeted education.</p> 
+
+    <button onclick="modifyStyle()">SUBMIT</button>
+   </div>
+    <script>
+        function modifyStyle(){
+            const paragraph = document.getElementById("paragraphstyle");
+            paragraph.style.fontFamily = "Courier New, monospace";
+            paragraph.style.fontSize = "20px";
+            paragraph.style.color = "Blue";
+        }
+    </script>
+</body>
+</html>

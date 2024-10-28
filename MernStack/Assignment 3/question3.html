@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            height: 500px;
+            background-color: burlywood;
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto; /* Centers the container */
+            padding: 20px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Remove Dropdown Items</h1>
+    
+    <label for="myDropdown">Choose Subject:</label>
+    <select id="myDropdown">
+        <option value="item1">Java</option>
+        <option value="item2">Data Structure</option>
+        <option value="item3">SQL</option>
+        <option value="item4">Operating System</option>
+    </select>
+    
+    <button onclick="removeSelectedItem()">Remove Item</button>
+
+    <script>
+        function removeSelectedItem() {
+            let dropdown = document.getElementById("myDropdown");
+
+            let selectedIndex = dropdown.selectedIndex;
+
+            if (selectedIndex !== -1) {
+                dropdown.remove(selectedIndex);
+            }
+        }
+    </script>
+</div>
+    
+</body>
+</html>

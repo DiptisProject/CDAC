@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+            background-color: burlywood;
+            margin: 0;
+        }
+        .container {
+            max-width: 350px;
+            width: 100%;
+            padding: 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form id="userform">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+        
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+        
+        <label for="contactNo">Contact No.:</label>
+        <input type="text" id="contactNo" name="contactNo" required><br><br>
+        
+        <label for="emailId">Email ID:</label>
+        <input type="email" id="emailId" name="emailId" required><br><br>
+        
+        <button type="button" onclick="displayFormValues()">Submit</button>
+     
+    </form>
+        <p id="output"></p>
+
+     </div>
+        
+        <script>
+            function displayFormValues() {
+
+                let firstName = document.getElementById("firstName").value;
+                let lastName = document.getElementById("lastName").value;
+                let contactNo = document.getElementById("contactNo").value;
+                let emailId = document.getElementById("emailId").value;
+    
+                document.getElementById("output").innerHTML = `
+                    <h2>Form Values:</h2>
+                    <p><b>First Name:</b> ${firstName}</p>
+                    <p><b>Last Name:</b> ${lastName}</p> 
+                    <p><b>Contact No.:</b> ${contactNo}</p>
+                    <p><b>Email ID: </b>${emailId}</p>
+                `;
+            }
+        </script>
+    
+</body>
+</html>
