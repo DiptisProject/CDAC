@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <script>
+        const tax_rate=0.08;
+        let cart=[];
+        let total_price=0;
+
+        function addData(name,price,quantity)
+        {
+            let item={
+                name:name,
+                price:price,
+                quantity:quantity
+            };
+            cart.push(item);
+            console.log(`${quantity} ${name} added to cart.`);
+            calculateTotal();
+        }
+       function calculateTotal()
+        {
+            for(let data of cart)
+        {
+            let totalItem=data.price*data.quantity;
+            total_price +=totalItem;
+        }
+        total_price+=total_price*tax_rate;
+        }
+        function dispaly()
+        {
+            console.log("Items in your cart");
+            for(let item of cart)
+        {
+            console.log(`${item.quantity} x ${item.name} - ${item.price.toFixed(2)}`);
+
+        }
+        console.log(`Total Price:$${total_price.toFixed(2)}`);
+        }
+
+        addData("Apple",1.5,3);
+        addData("Banana",0.5,5);
+        addData("Orange",0.75,4);
+
+        dispaly();
+    </script>
+</body>
+</html>
